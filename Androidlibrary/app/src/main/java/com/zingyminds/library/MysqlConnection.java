@@ -17,8 +17,8 @@ public class MysqlConnection {
     public static Connection getConn() {
         Connection  conn = null;
         try {
-            conn= DriverManager.getConnection("jdbc:mysql://sh-cynosdbmysql-grp-n96gyt02.sql.tencentcdb.com:28904/sys",
-                    "root","xxy225679!");
+            conn= DriverManager.getConnection("jdbc:mysql://你的主机:你的端口号/sys",
+                    "你的账户","你的密码");
         }catch (Exception exception){
             exception.printStackTrace();
         }
